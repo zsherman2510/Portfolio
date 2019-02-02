@@ -1,5 +1,5 @@
-@import 'config';
-@import 'menu';
+@import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -78,8 +78,8 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
+    "bioimage bio bio"
+    "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -93,17 +93,23 @@ main {
     grid-area: bio;
     font-size: 1.5rem;
   }
+  .job {
+    list-style: none;
+  }
 
   .job-1 {
     grid-area: job1;
+    list-style: none;
   }
 
   .job-2 {
     grid-area: job2;
+    list-style: none;
   }
 
   .job-3 {
     grid-area: job3;
+    list-style: none;
   }
 
   .job {
@@ -123,7 +129,6 @@ main {
     height: 100%;
     width: 100%;
     border-bottom: solid red 2px;
-
   }
   img {
     width: 100%;
@@ -196,4 +201,4 @@ main {
   height: 60px;
 }
 
-@import 'mobile';
+@import "mobile";

@@ -43,7 +43,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: .9;
+  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -90,10 +90,12 @@
     .portrait {
       width: 250px;
       height: 250px;
-      object-fit: contain;
-      background: url('../img/myself.jpg');
+
+      background: url("../img/Z.png");
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 
