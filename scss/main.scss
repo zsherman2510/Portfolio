@@ -128,12 +128,12 @@ main {
   .item {
     height: 100%;
     width: 100%;
-    border-bottom: solid red 2px;
   }
   img {
     width: 100%;
-    height: 80%;
+    height: 88%;
     border: 3px #fff solid;
+    background-size: cover;
 
     &:hover {
       opacity: 0.5;
@@ -172,25 +172,40 @@ main {
 // Button Styles
 .btn {
   display: block;
+  text-align: center;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 }
 
 .btn-dark {
   @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
+  background: rgb(22, 22, 22);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  &:hover {
+    background: rgb(0, 0, 0);
+  }
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($secondary-color, 4);
   color: #333;
+  &:hover {
+    background: darken($secondary-color, 5);
+  }
 }
 
 #main-footer {
